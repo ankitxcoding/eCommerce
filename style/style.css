@@ -1,16 +1,31 @@
 html, body {
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     overflow: auto;
     background: #000;
 }
 
-h1, h2 {
-    color: #fff;
+#title {
+    color: yellow;
 }
 
 ul li, h2 {
     display: inline;
+}
+
+#fa-shopping-cart {
+    color: #fff;
+    font-size: 100px;
+}
+
+.navbar {
+    float: right;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
