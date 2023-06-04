@@ -15,7 +15,8 @@
             <li><a id="fa-shopping-cart" class="fa fa-shopping-cart" aria-hidden="true" href="index.html"></a></li>
             <div class="nav">
                 <li><input type="text" placeholder="Search..." id="search" class="search"></li>
-                <li><a class="menubutton" href="#">Account</a></li>
+                <!-- <li><a class="menubutton" href="#">Account</a></li> -->
+                <li><button onclick="document.getElementById('account').style.display='block'" style="width:auto;"><a class="menubutton" href="#">Account</a></button></li>
                 <li><a class="menubutton" href="#">Wishlist</a></li>
                 <li><a class="menubutton" href="#">Camera</a></li>
             </div>
@@ -44,6 +45,36 @@
         <details>
             <summary>Footwear</summary>
         </details>
+    </div>
+
+    <!-- login form -->
+
+    <div id="account" class="modal">
+    
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('account').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember">
+            <p class="remember">Remember Me</p>
+        </label>
+        </div>
+
+        <div class="container" style="background-color:#000">
+        <button type="button" onclick="document.getElementById('account').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot Password?</a></span>
+        </div>
+    </form>
     </div>
 
     <script src="script/script.js"></script>
