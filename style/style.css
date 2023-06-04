@@ -9,28 +9,40 @@ html, body {
 }
 
 #title {
-    color: orange;
     text-align: center;
     font-size: 3em;
 }
 
+#title a {
+    
+    color: orange;
+    text-decoration: none;
+}
+
 h2 {
+    color: #fff;
+    margin-left: 15px;
+}
+
+details summary {
     color: #fff;
 }
 
 ul li{
+    list-style-type: none;
     display: inline;
 }
 
 #fa-shopping-cart {
     color: orange;
     font-size: 80px;
+    text-decoration: none;
 }
 
 .nav {
     float: right;
     color: #fff;
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .menubutton {
@@ -93,4 +105,10 @@ ul li{
 
 .search::placeholder {
     color: #fff;
+}
+
+.categories details {
+    display: inline;
+    font-size: 1.2em;
+    margin: 50px;
 }
