@@ -42,7 +42,7 @@ ul li{
 .nav {
     float: right;
     color: #fff;
-    padding-top: 1.5em;
+    padding-top: 0.2em;
 }
 
 .menubutton {
@@ -111,7 +111,7 @@ ul li{
 .categories details {
     display: inline;
     font-size: 1.2em;
-    margin: 50px;
+    margin: auto 50px 50px 50px;
 }
 
 /* login form css */
