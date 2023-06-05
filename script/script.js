@@ -34,3 +34,10 @@ function openCam(){
        console.log(e.name + ": " + e.message);
     });
 }
+
+var modal = document.getElementById('camera');
+window.onclick = function(event) {
+    if (event.target == webcam) {
+        modal.style.display = "none";
+    }
+}

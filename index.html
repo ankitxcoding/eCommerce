@@ -18,8 +18,8 @@
                 <!-- <li><a class="menubutton" href="#">Account</a></li> -->
                 <li><button onclick="document.getElementById('account').style.display='block'" style="width:auto;"><a class="menubutton">Account</a></button></li>
                 <li><a class="menubutton" href="#">Wishlist</a></li>
-                <li><button id="startBtn" onclick="openCam()"><a class="menubutton" href="#">Camera</a></button></li>
                 <!-- <li><a class="menubutton" href="#">Camera</a></li> -->
+                <li><button onclick="document.getElementById('camera').style.display='block'" style="width:auto;"><a class="menubutton">Camera</a></button></li>
             </div>
         </ul>
     </div>
@@ -81,8 +81,24 @@
     <!-- camera access -->
 
     <!-- <button id="startBtn" onclick="openCam()">Open Webcam</button> -->
-    <button onclick="openCam()">Open Camera</button>
     <!-- <video id="videoCam"></video> -->
+    <!-- <button onclick="openCam()">Open Camera</button> -->
+
+    <div id="camera" class="webcam">
+        <video id="videoCam"></video>
+        <form class="webcam-content animate">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('camera').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <br>
+    
+            <div class="login">
+                
+            <button id="startBtn" onclick="openCam()">Open Webcam</button>
+            <video id="videoCam"></video>
+            </div>
+        </form>
+    </div>
 
     <script src="script/script.js"></script>
 </body>
