@@ -18,7 +18,8 @@
                 <!-- <li><a class="menubutton" href="#">Account</a></li> -->
                 <li><button onclick="document.getElementById('account').style.display='block'" style="width:auto;"><a class="menubutton">Account</a></button></li>
                 <li><a class="menubutton" href="#">Wishlist</a></li>
-                <li><a class="menubutton" href="#">Camera</a></li>
+                <li><button id="startBtn" onclick="openCam()"><a class="menubutton" href="#">Camera</a></button></li>
+                <!-- <li><a class="menubutton" href="#">Camera</a></li> -->
             </div>
         </ul>
     </div>
@@ -76,6 +77,12 @@
         </div>
     </form>
     </div>
+
+    <!-- camera access -->
+
+    <!-- <button id="startBtn" onclick="openCam()">Open Webcam</button> -->
+    <button onclick="openCam()">Open Camera</button>
+    <!-- <video id="videoCam"></video> -->
 
     <script src="script/script.js"></script>
 </body>
