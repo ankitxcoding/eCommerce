@@ -151,7 +151,7 @@ ul li{
 }
 
 button {
-    background-color: #1DB954;
+    background-color: #546e7a;
     color: #000;
     padding: 14px 20px;
     margin: 8px 0;
@@ -168,6 +168,7 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
+    color: #fff;
     background-color: #ff0000;
 }
   
