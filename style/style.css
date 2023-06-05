@@ -105,6 +105,7 @@ ul li{
 
 .search::placeholder {
     color: #fff;
+    opacity: 0.5;
 }
 
 .categories details {
@@ -120,6 +121,7 @@ ul li{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
+    color: #fff;
     background: #000;
     border: 2px solid orange;
     box-sizing: border-box;
@@ -128,6 +130,7 @@ ul li{
 
 .container input::placeholder {
     color: #fff;
+    opacity: 0.5;
 }
 
 .remember {
@@ -186,7 +189,11 @@ span.psw {
 
 .psw a {
     text-decoration: none;
-    color: #ff0000;
+    color: #fff;
+}
+
+.psw a:hover {
+    opacity: 0.5;
 }
   
   /* The Modal (background) */
