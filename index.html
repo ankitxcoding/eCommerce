@@ -7,6 +7,9 @@
     <title>eCommerce</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
     <h1 id="title"><a href="index.html">eCommerce</a></h1>
@@ -22,6 +25,20 @@
                 <li><button onclick="document.getElementById('camera').style.display='block'" style="width:auto;"><a class="menubutton">Camera</a></button></li>
             </div>
         </ul>
+    </div>
+
+    <!-- home page slider -->
+
+    <div id="sliding">
+        <h2>Trending Deals:</h2>
+        <section>
+            <div id="containerSlider">
+                <div id="slidingImage"> <img src="photos/img1.png" alt="image1"> </div>
+                <div id="slidingImage"> <img src="photos/img2.png" alt="image2"> </div>
+                <div id="slidingImage"> <img src="photos/img3.png" alt="image3"> </div>
+                <div id="slidingImage"> <img src="photos/img4.png" alt="image4"> </div>
+            </div>
+        </section>
     </div>
 
     <div id="mainContainer">
@@ -113,5 +130,6 @@
     </div>
 
     <script src="script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 </html>

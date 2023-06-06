@@ -55,6 +55,19 @@ window.onclick = function (event) {
   }
 };
 
+// home page slider
+
+$(document).ready(function() {
+  $('#containerSlider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    });
+});
+
 // clothing for men and women
 
 let contentTitle;
