@@ -225,7 +225,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: #ff0000;
     cursor: pointer;
 }
 
@@ -300,6 +300,6 @@ span.psw {
 
 .cross:hover,
 .cross:focus {
-    color: red;
+    color: #ff0000;
     cursor: pointer;
 }
