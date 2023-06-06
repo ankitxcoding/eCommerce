@@ -85,19 +85,15 @@
     <!-- <button onclick="openCam()">Open Camera</button> -->
 
     <div id="camera" class="webcam">
-        <video id="videoCam"></video>
-        <form class="webcam-content animate">
-            <div class="imgcontainer">
-            <span onclick="document.getElementById('camera').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="webcam-content animate">
+            <div class="crossbtn">
+                <div class="login">
+                <span onclick="closeCam()" class="cross" title="Close Modal">&times;</span>
+                <button onclick="openCam().style.display='block'" style="width:auto;">Open Camera</button>
+                <video id="videoCam"></video>
+                </div>
             </div>
-            <br>
-    
-            <div class="login">
-                
-            <button id="startBtn" onclick="openCam()">Open Webcam</button>
-            <video id="videoCam"></video>
-            </div>
-        </form>
+        </div>
     </div>
 
     <script src="script/script.js"></script>
