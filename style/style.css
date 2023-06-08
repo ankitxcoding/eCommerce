@@ -430,22 +430,25 @@ span.psw {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
 #containerSlider img {
     width: 100%;
     height: 140%;
     text-align: center;
     align-content: center;
 }
-@media(max-width: 732px) {
-    #containerSlider img
-    {
-        height: 12em;
+
+@media (max-width: 732px) {
+    #containerSlider img {
+      height: 12em;
+      transition: height 0.5s ease;
     }
 }
-@media(max-width: 500px) {
-    #containerSlider img
-    {
-        height: 10em;
+  
+@media (max-width: 500px) {
+    #containerSlider img {
+      height: 10em;
+      transition: height 0.5s ease;
     }
 }
 
@@ -519,56 +522,63 @@ span.psw {
     color: #e2b714;
 }
 
-@media(max-width: 1070px)
-{
+@media (max-width: 1070px) {
     h1 {
-        font-size: 25px;
+      font-size: 25px;
     }
-    #containerClothing, #containerAccessories {
-        width: 95%;
-        grid-gap: 10px;
+    #containerClothing,
+    #containerAccessories {
+      width: 95%;
+      grid-gap: 10px;
+    }
+    #containerClothing img,
+    #containerAccessories img {
+      width: 100%;
+      height: auto;
     }
 }
-@media(max-width: 850px)
-{
+  
+@media (max-width: 850px) {
     h1 {
-        width: 80%;
+      width: 80%;
     }
-    #containerClothing, #containerAccessories {
-        display: grid;
-        grid-gap: 70px 20px;
-        grid-template-columns: repeat(3, 1fr);
-        width: 80%;
-    }    
-}
-@media(max-width: 650px)
-{
-    h1 {
-        font-size: 20px;
-    }
-    h1 {
-        width: 90%;
-    }
-    #containerClothing, #containerAccessories {
-        width: 90%;
+    #containerClothing,
+    #containerAccessories {
+      display: grid;
+      grid-gap: 70px 20px;
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
     }
 }
-@media(max-width: 600px)
-{
+  
+@media (max-width: 650px) {
     h1 {
-        width: 70%;
+      font-size: 20px;
+      width: 90%;
     }
-    #containerClothing, #containerAccessories {
-        width: 70%;
+    #containerClothing,
+    #containerAccessories {
+      width: 90%;
     }
 }
-@media(max-width: 505px)
-{
+  
+@media (max-width: 600px) {
     h1 {
-        width: 80%;
+      width: 70%;
     }
-    #containerClothing, #containerAccessories {
-        width: 80%;
-        grid-template-columns: repeat(2, 1fr);
+    #containerClothing,
+    #containerAccessories {
+      width: 70%;
     }
 }
+  
+@media (max-width: 505px) {
+    h1 {
+      width: 80%;
+    }
+    #containerClothing,
+    #containerAccessories {
+      width: 80%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}  
