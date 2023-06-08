@@ -114,6 +114,78 @@ ul li{
     margin: auto 50px 50px 50px;
 }
 
+@media (max-width: 600px) {
+    #title {
+      font-size: 2em;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    #categories h2 {
+      font-size: 1.5em;
+      margin-left: 10px;
+      transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    }
+  
+    .menubutton {
+      font-size: 1em;
+      margin: 10px;
+      padding-bottom: 5px;
+      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+  
+    .search {
+      font-size: 1em;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    .categories details {
+      font-size: 1em;
+      margin: 10px;
+      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
+    }
+  
+    #fa-shopping-cart {
+      font-size: 60px;
+      transition: font-size 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 480px) {
+    #title {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    #categories h2 {
+      font-size: 1.2em;
+      margin-left: 10px;
+      transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    }
+  
+    .menubutton {
+      font-size: 1em;
+      margin: 10px;
+      padding-bottom: 5px;
+      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+  
+    .search {
+      font-size: 1em;
+      transition: font-size 0.3s ease-in-out;
+    }
+  
+    .categories details {
+      font-size: 1em;
+      margin: 10px;
+      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
+    }
+  
+    #fa-shopping-cart {
+      font-size: 60px;
+      transition: font-size 0.3s ease-in-out;
+    }
+}
+
 /* login form css */
 
 .login input[type=text], input[type=password] {
@@ -430,7 +502,7 @@ span.psw {
     text-transform: capitalize;
 }
 
-#box a  {
+#box a {
     text-decoration: none;
     color: #fff;
 }
@@ -443,31 +515,26 @@ span.psw {
     font-weight: 100;
 }
 
-#mainContainer h2
-{
+#mainContainer h2 {
     color: #e2b714;
 }
 
 @media(max-width: 1070px)
 {
-    h1
-    {
+    h1 {
         font-size: 25px;
     }
-    #containerClothing, #containerAccessories
-    {
+    #containerClothing, #containerAccessories {
         width: 95%;
         grid-gap: 10px;
     }
 }
 @media(max-width: 850px)
 {
-    h1 
-    {
+    h1 {
         width: 80%;
     }
-    #containerClothing, #containerAccessories
-    {
+    #containerClothing, #containerAccessories {
         display: grid;
         grid-gap: 70px 20px;
         grid-template-columns: repeat(3, 1fr);
@@ -476,38 +543,31 @@ span.psw {
 }
 @media(max-width: 650px)
 {
-    h1
-    {
+    h1 {
         font-size: 20px;
     }
-    h1 
-    {
+    h1 {
         width: 90%;
     }
-    #containerClothing, #containerAccessories
-    {
+    #containerClothing, #containerAccessories {
         width: 90%;
     }
 }
 @media(max-width: 600px)
 {
-    h1 
-    {
+    h1 {
         width: 70%;
     }
-    #containerClothing, #containerAccessories
-    {
+    #containerClothing, #containerAccessories {
         width: 70%;
     }
 }
 @media(max-width: 505px)
 {
-    h1 
-    {
+    h1 {
         width: 80%;
     }
-    #containerClothing, #containerAccessories
-    {
+    #containerClothing, #containerAccessories {
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
     }
