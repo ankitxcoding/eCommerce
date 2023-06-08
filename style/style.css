@@ -275,9 +275,10 @@ span.psw {
     margin: 5% auto 15% auto;
     border: 2px solid #e2b714;
     width: 50%;
-    display: flex;
+    /* display: flex; */
     justify-content: flex-end;
     position: relative;
+    overflow: hidden;
 }
 
 .crossbtn {
@@ -288,7 +289,6 @@ span.psw {
 
 .cross {
     position: absolute;
-    top: 10px;
     right: 10px;
     z-index: 2;
     color: #fff;
@@ -302,6 +302,45 @@ span.psw {
 .cross:focus {
     color: #ff0000;
     cursor: pointer;
+}
+
+.openCam button {
+    background-color: #546e7a;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+#videoCam {
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+  #videoCam {
+    position: relative;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  #videoCam {
+    position: relative;
+    width: 60%;
+    height: 60%;
+  }
+}
+
+@media (max-width: 240px) {
+  #videoCam {
+    position: relative;
+    width: 40%;
+    height: 40%;
+  }
 }
 
 /* home page slider */
