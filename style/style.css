@@ -440,14 +440,14 @@ span.psw {
 
 @media (max-width: 732px) {
     #containerSlider img {
-      height: 12em;
+      height: 10em;
       transition: height 0.5s ease;
     }
 }
   
 @media (max-width: 500px) {
     #containerSlider img {
-      height: 10em;
+      height: 5em;
       transition: height 0.5s ease;
     }
 }
