@@ -584,3 +584,14 @@ span.psw {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 450px) {
+    h1 {
+        width: 80%;
+    }
+    #containerClothing,
+    #containerAccessories {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
