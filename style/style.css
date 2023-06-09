@@ -581,6 +581,7 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: 80%;
+        font-size: 12px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -591,7 +592,8 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-        width: 80%;
+        width: min-content;
+        font-size: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
