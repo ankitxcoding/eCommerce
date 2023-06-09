@@ -595,3 +595,18 @@ span.psw {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width: 300px) {
+    #containerClothing img,
+    #containerAccessories img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 200px) {
+    #containerClothing,
+    #containerAccessories {
+        overflow: hidden;
+    }
+}
