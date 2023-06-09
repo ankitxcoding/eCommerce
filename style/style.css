@@ -116,73 +116,73 @@ ul li{
 
 @media (max-width: 600px) {
     #title {
-      font-size: 2em;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 2em;
+        transition: font-size 0.3s ease-in-out;
     }
   
     #categories h2 {
-      font-size: 1.5em;
-      margin-left: 10px;
-      transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+        font-size: 1.5em;
+        margin-left: 10px;
+        transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
     }
   
     .menubutton {
-      font-size: 1em;
-      margin: 10px;
-      padding-bottom: 5px;
-      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        font-size: 1em;
+        margin: 10px;
+        padding-bottom: 5px;
+        transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
   
     .search {
-      font-size: 1em;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 1em;
+        transition: font-size 0.3s ease-in-out;
     }
   
     .categories details {
-      font-size: 1em;
-      margin: 10px;
-      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
+        font-size: 1em;
+        margin: 10px;
+        transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
     }
   
     #fa-shopping-cart {
-      font-size: 60px;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 60px;
+        transition: font-size 0.3s ease-in-out;
     }
 }
 
 @media (max-width: 480px) {
     #title {
-      font-size: 1.5em;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 1.5em;
+        transition: font-size 0.3s ease-in-out;
     }
   
     #categories h2 {
-      font-size: 1.2em;
-      margin-left: 10px;
-      transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+        font-size: 1.2em;
+        margin-left: 10px;
+        transition: font-size 0.3s ease-in-out, margin-left 0.3s ease-in-out;
     }
   
     .menubutton {
-      font-size: 1em;
-      margin: 10px;
-      padding-bottom: 5px;
-      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        font-size: 1em;
+        margin: 10px;
+        padding-bottom: 5px;
+        transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
   
     .search {
-      font-size: 1em;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 1em;
+        transition: font-size 0.3s ease-in-out;
     }
   
     .categories details {
-      font-size: 1em;
-      margin: 10px;
-      transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
+        font-size: 1em;
+        margin: 10px;
+        transition: font-size 0.3s ease-in-out, margin 0.3s ease-in-out;
     }
   
     #fa-shopping-cart {
-      font-size: 60px;
-      transition: font-size 0.3s ease-in-out;
+        font-size: 60px;
+        transition: font-size 0.3s ease-in-out;
     }
 }
 
@@ -392,27 +392,27 @@ span.psw {
 }
 
 @media (max-width: 480px) {
-  #videoCam {
-    position: relative;
-    width: 80%;
-    height: 80%;
-  }
+    #videoCam {
+        position: relative;
+        width: 80%;
+        height: 80%;
+    }
 }
 
 @media (max-width: 320px) {
-  #videoCam {
-    position: relative;
-    width: 60%;
-    height: 60%;
-  }
+    #videoCam {
+        position: relative;
+        width: 60%;
+        height: 60%;
+    }
 }
 
 @media (max-width: 240px) {
-  #videoCam {
-    position: relative;
-    width: 40%;
-    height: 40%;
-  }
+    #videoCam {
+        position: relative;
+        width: 40%;
+        height: 40%;
+    }
 }
 
 /* home page slider */
@@ -530,55 +530,57 @@ span.psw {
     #containerAccessories {
       width: 95%;
       grid-gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
     #containerClothing img,
     #containerAccessories img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
 }
-  
+
 @media (max-width: 850px) {
     h1 {
-      width: 80%;
+        width: 80%;
     }
     #containerClothing,
     #containerAccessories {
-      display: grid;
-      grid-gap: 70px 20px;
-      grid-template-columns: repeat(3, 1fr);
-      width: 80%;
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
-  
+
 @media (max-width: 650px) {
     h1 {
-      font-size: 20px;
-      width: 90%;
+        font-size: 20px;
+        width: 90%;
     }
     #containerClothing,
     #containerAccessories {
-      width: 90%;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-  
+
 @media (max-width: 600px) {
     h1 {
-      width: 70%;
+        width: 70%;
     }
     #containerClothing,
     #containerAccessories {
-      width: 70%;
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-  
+
 @media (max-width: 505px) {
     h1 {
-      width: 80%;
+        width: 80%;
     }
     #containerClothing,
     #containerAccessories {
-      width: 80%;
-      grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
     }
-}  
+}
