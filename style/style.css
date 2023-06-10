@@ -510,10 +510,6 @@ span.psw {
     color: #fff;
 }
 
-#mainContainer h3 {
-    font-size: 16px;
-}
-
 #mainContainer h4 {
     font-weight: 100;
 }
@@ -528,7 +524,7 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-      width: 95%;
+      width: min-content;
       grid-gap: 10px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -546,7 +542,7 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-        width: 80%;
+        width: min-content;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -558,8 +554,8 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        width: min-content;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -569,8 +565,8 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-        width: 70%;
-        grid-template-columns: repeat(2, 1fr);
+        width: min-content;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -580,9 +576,9 @@ span.psw {
     }
     #containerClothing,
     #containerAccessories {
-        width: 80%;
-        font-size: 12px;
-        grid-template-columns: repeat(2, 1fr);
+        width: min-content;
+        font-size: 10px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -593,8 +589,8 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
-        font-size: 10px;
-        grid-template-columns: repeat(1, 1fr);
+        font-size: 5px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
