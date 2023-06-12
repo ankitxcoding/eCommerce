@@ -68,7 +68,7 @@ $(document).ready(function() {
     });
 });
 
-// clothing for men and women
+// home page content
 
 let contentTitle;
 
