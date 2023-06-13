@@ -1,0 +1,63 @@
+#mainContainer h1 {
+    color: #fff;
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#containerClothing, #containerAccessories {
+    display: grid;
+    grid-gap: 70px 20px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#box {
+    width: 100%;
+    background-color: #000;
+    align-content: center;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all .2s ease-in-out;
+}
+
+#box:hover {
+    border: 2px solid #e2b714;
+    transform: scale(1.05);
+}
+
+#containerClothing img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#containerAccessories img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#mainContainer h4 {
+    font-weight: 100;
+}
+
+#mainContainer h2 {
+    color: #e2b714;
+}
