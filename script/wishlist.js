@@ -5,7 +5,8 @@ let ClearCartBtn = document.getElementById("clear-cart");
 function updateCart() {
   CartList.innerHTML = "";
   CartArr.forEach((item) => {
-    let cartItem = document.createElement("li");
+    let cartItem = document.createElement("div");
+    cartItem.id="box";
     let productImage = document.createElement("img");
     let productInfo = document.createElement("div");
     let productName = document.createElement("h4");
@@ -24,6 +25,7 @@ function updateCart() {
     cartItem.appendChild(productInfo);
     CartList.appendChild(cartItem);
   });
+  CartList.classList.add("inline-list");
 }
 
 function clearCart() {
