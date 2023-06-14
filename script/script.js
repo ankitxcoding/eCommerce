@@ -119,15 +119,15 @@ function DisplayProducts(data) {
     h2.appendChild(h2Text);
 
     let add_to_cart = document.createElement("button");
-    add_to_cart.textContent = "Add to Cart";
+    add_to_cart.textContent = "Wishlist";
 
     add_to_cart.addEventListener("click", () => {
       if (checkDuplicate(product)) {
-        alert("Product Already in Cart");
+        alert("Product Already in Wishlist");
       } else {
         CartArr.push({ ...product, quantity: 1 });
         localStorage.setItem("cart", JSON.stringify(CartArr));
-        alert("Product Added To Cart");
+        alert("Product Added To Wishlist");
       }
     });
 
