@@ -70,15 +70,26 @@ body {
   
 #clear-cart {
     align-self: flex-start;
-}  
+}
+
+#wishlist h2 {
+    color: #fff;
+}
 
 h2 {
+    color: #e2b714;
+    margin-inline-start: 10px;
+}
+
+h3 {
     color: #fff;
+    margin-inline-start: 10px;
 }
 
 h4 {
     color: #fff;
     margin-inline-start: 10px;
+    font-weight: 100;
 }
 
 #categories h2 {
@@ -100,6 +111,10 @@ ul li {
     font-size: 80px;
     text-decoration: none;
     margin-right: 40px;
+}
+
+.fa-shopping-cart:before {
+    margin-left: 40px;
 }
 
 .menubutton {

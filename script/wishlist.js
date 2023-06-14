@@ -9,19 +9,19 @@ function updateCart() {
     cartItem.id="box";
     let productImage = document.createElement("img");
     let productInfo = document.createElement("div");
-    let productName = document.createElement("h4");
-    let productPrice = document.createElement("h4");
-    let productQuantity = document.createElement("h4");
+    let productName = document.createElement("h3");
+    let productPrice = document.createElement("h2");
+    let productBrand = document.createElement("h4");
 
     productImage.src = item.preview;
     productName.textContent = item.name;
-    productPrice.textContent = `Price: Rs. ${item.price}`;
-    productQuantity.textContent = `Quantity: ${item.quantity}`;
+    productPrice.textContent = `Rs. ${item.price}`;
+    productBrand.textContent = item.brand;
 
     cartItem.appendChild(productImage);
     productInfo.appendChild(productName);
+    productInfo.appendChild(productBrand);
     productInfo.appendChild(productPrice);
-    productInfo.appendChild(productQuantity);
     cartItem.appendChild(productInfo);
     CartList.appendChild(cartItem);
   });
