@@ -565,6 +565,10 @@ span.psw {
         width: min-content;
         grid-template-columns: repeat(3, 1fr);
     }
+    #mainContainer button {
+        font-size: 10px;
+        padding: 5px 5px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -574,7 +578,12 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
+        font-size: 12px;
         grid-template-columns: repeat(3, 1fr);
+    }
+    #mainContainer button {
+        font-size: 8px;
+        padding: 3px 8px;
     }
 }
 
@@ -588,6 +597,10 @@ span.psw {
         font-size: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
+    #mainContainer button {
+        font-size: 7px;
+        padding: 2px 7px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -597,22 +610,40 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
-        font-size: 5px;
+        font-size: 7px;
         grid-template-columns: repeat(3, 1fr);
+    }
+    #mainContainer button {
+        font-size: 5px;
+        padding: 0px 5px;
     }
 }
 
 @media (max-width: 300px) {
+    h1 {
+        width: 80%;
+    }
     #containerClothing img,
     #containerAccessories img {
         width: 100%;
         height: auto;
     }
+    #mainContainer button {
+        font-size: 3px;
+        padding: 0px 3px;
+    }
 }
 
 @media (max-width: 200px) {
+    h1 {
+        width: 80%;
+    }
     #containerClothing,
     #containerAccessories {
         overflow: hidden;
+    }
+    #mainContainer button {
+        font-size: 2px;
+        padding: 0px 2px;
     }
 }
