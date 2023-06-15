@@ -563,6 +563,7 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
+        font-size: 12px;
         grid-template-columns: repeat(3, 1fr);
     }
     #mainContainer button {
@@ -578,7 +579,7 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
-        font-size: 12px;
+        font-size: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
     #mainContainer button {
@@ -594,7 +595,7 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
-        font-size: 10px;
+        font-size: 7px;
         grid-template-columns: repeat(3, 1fr);
     }
     #mainContainer button {
@@ -610,7 +611,7 @@ span.psw {
     #containerClothing,
     #containerAccessories {
         width: min-content;
-        font-size: 7px;
+        font-size: 5px;
         grid-template-columns: repeat(3, 1fr);
     }
     #mainContainer button {
@@ -623,10 +624,11 @@ span.psw {
     h1 {
         width: 80%;
     }
-    #containerClothing img,
-    #containerAccessories img {
-        width: 100%;
-        height: auto;
+    #containerClothing,
+    #containerAccessories {
+        width: min-content;
+        font-size: 2px;
+        grid-template-columns: repeat(3, 1fr);
     }
     #mainContainer button {
         font-size: 3px;
