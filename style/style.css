@@ -186,6 +186,15 @@ ul li {
     }
 }
 
+.categories details > *:not(summary) {
+    display: none;
+}
+
+.categories details:hover > *:not(summary),
+.categories details[open] > *:not(summary) {
+    display: block;
+}
+
 /* login form css */
 
 .login input[type=text], input[type=password] {

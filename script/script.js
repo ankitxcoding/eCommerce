@@ -1,3 +1,42 @@
+// categories
+
+document.addEventListener('DOMContentLoaded', function() {
+  var categoryDetails = document.querySelectorAll('.categories details');
+  categoryDetails.forEach(function(details) {
+      var summary = details.querySelector('summary');
+
+      details.addEventListener('mouseover', function() {
+          if (!summary.hasAttribute('clicked')) {
+              this.setAttribute('open', '');
+          }
+      });
+      details.addEventListener('mouseout', function() {
+          if (!summary.hasAttribute('clicked')) {
+              this.removeAttribute('open');
+          }
+      });
+
+      summary.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (details.hasAttribute('open')) {
+              details.removeAttribute('open');
+              summary.removeAttribute('clicked');
+          } else {
+              details.setAttribute('open', '');
+              summary.setAttribute('clicked', '');
+          }
+
+          categoryDetails.forEach(function(otherDetails) {
+              if (otherDetails !== details) {
+                  otherDetails.removeAttribute('open');
+                  var otherSummary = otherDetails.querySelector('summary');
+                  otherSummary.removeAttribute('clicked');
+              }
+          });
+      });
+  });
+});
+
 // login form js
 
 var modal = document.getElementById("account");
