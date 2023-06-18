@@ -197,7 +197,7 @@ ul li {
 
 .categories details:hover > *:not(summary),
 .categories details[open] > *:not(summary) {
-    display: block;
+    display: table-row;
 }
 
 /* login form css */
