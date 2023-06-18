@@ -117,6 +117,11 @@ ul li {
 .categories a {
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
+}
+
+.categories a:hover {
+    color: #e2b714;
 }
 
 @media (max-width: 600px) {
