@@ -1,3 +1,7 @@
+// global variable
+
+let data;
+
 // categories
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -117,7 +121,7 @@ async function FetchData() {
   try {
     let res = await fetch("https://648050cdf061e6ec4d490d80.mockapi.io/product");
     if (res.ok) {
-      let data = await res.json();
+      data = await res.json();
       DisplayProducts(data);
     } else {
       console.log("Request failed with status:", res.status);
@@ -194,3 +198,18 @@ function checkDuplicate(product) {
   }
   return false;
 }
+
+// search functionality
+
+var searchInput = document.getElementById("searchInput");
+var searchButton = document.getElementById("searchButton");
+
+searchButton.addEventListener("click", function() {
+  var searchTerm = searchInput.value.toLowerCase();
+  var filteredData = data.filter(function(product) {
+    return product.name.toLowerCase().includes(searchTerm);
+  });
+  DisplayProducts(filteredData);
+});
+
+FetchData();
