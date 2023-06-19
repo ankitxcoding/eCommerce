@@ -201,21 +201,57 @@ function checkDuplicate(product) {
 
 // search functionality
 
-var searchInput = document.getElementById("searchInput");
-var searchButton = document.getElementById("searchButton");
+// var searchInput = document.getElementById("searchInput");
+// var searchButton = document.getElementById("searchButton");
+
+// searchButton.addEventListener("click", performSearch);
+
+// searchInput.addEventListener("keyup", function(event) {
+//   if (event.key === "Enter") {
+//     performSearch();
+//   }
+// });
+
+// function performSearch() {
+//   var searchTerm = searchInput.value.toLowerCase();
+//   var filteredData = data.filter(function(product) {
+//     return product.name.toLowerCase().includes(searchTerm);
+//   });
+//   DisplayProducts(filteredData);
+// }
 
 searchButton.addEventListener("click", performSearch);
 
-searchInput.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
+searchInput.addEventListener("keypress", function(event) {
+  if (event.keyCode === 13) {
     performSearch();
   }
 });
 
-function performSearch() {
-  var searchTerm = searchInput.value.toLowerCase();
+function performSearch() {search
+  var searchTerm = searchInput.value.toLowerCase(); 
   var filteredData = data.filter(function(product) {
     return product.name.toLowerCase().includes(searchTerm);
   });
   DisplayProducts(filteredData);
+
+  if (filteredData.length > 0) {
+    hideH1Elements();
+  } else {
+    showH1Elements();
+  }
+}
+
+function hideH1Elements() {
+  var h1Elements = document.querySelectorAll("#mainContainer h1");
+  h1Elements.forEach(function(h1) {
+    h1.style.display = "none";
+  });
+}
+
+function showH1Elements() {
+  var h1Elements = document.querySelectorAll("#mainContainer h1");
+  h1Elements.forEach(function(h1) {
+    h1.style.display = "block";
+  });
 }

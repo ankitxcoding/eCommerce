@@ -108,6 +108,17 @@ ul li {
     opacity: 0.5;
 }
 
+.fa-search {
+    color: #fff;
+    border: 2px solid #e2b714;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.fa-search:hover {
+    opacity: 0.8;
+}
+
 .categories details {
     display: inline;
     font-size: 1.2em;
