@@ -228,8 +228,8 @@ searchInput.addEventListener("keypress", function(event) {
   }
 });
 
-function performSearch() {search
-  var searchTerm = searchInput.value.toLowerCase(); 
+function performSearch() {
+  var searchTerm = searchInput.value.toLowerCase();
   var filteredData = data.filter(function(product) {
     return product.name.toLowerCase().includes(searchTerm);
   });
