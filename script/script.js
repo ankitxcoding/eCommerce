@@ -204,12 +204,18 @@ function checkDuplicate(product) {
 var searchInput = document.getElementById("searchInput");
 var searchButton = document.getElementById("searchButton");
 
-searchButton.addEventListener("click", function() {
+searchButton.addEventListener("click", performSearch);
+
+searchInput.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    performSearch();
+  }
+});
+
+function performSearch() {
   var searchTerm = searchInput.value.toLowerCase();
   var filteredData = data.filter(function(product) {
     return product.name.toLowerCase().includes(searchTerm);
   });
   DisplayProducts(filteredData);
-});
-
-FetchData();
+}
