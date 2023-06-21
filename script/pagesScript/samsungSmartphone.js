@@ -6,7 +6,7 @@ let ContainerAccessories = document.getElementById("containerAccessories");
 
 async function FetchData() {
   try {
-    let res = await fetch("https://6490855c1e6aa71680cb66a5.mockapi.io/apple");
+    let res = await fetch("https://649088471e6aa71680cb6b53.mockapi.io/samsung");
     if (res.ok) {
       data = await res.json();
       DisplayProducts(data);
